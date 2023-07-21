@@ -1,15 +1,16 @@
 body {
     font-family: 'Lora', sans-serif;
     color: #887B62;
-    background-image: url(../img/bgd.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #FEF3ED;
 }
 
-h1 {
-    font-family: 'Lora', sans-serif;
-    color: #887B62;
+.horizontal-line{
+    height: 5px; 
+    width: 600px;
+    background-color:  #887B62; 
+    margin: 20px 0;
 }
+
 
 
 /* Íconos */
