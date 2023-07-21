@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lora', sans-serif;
+    color: #887B62;
+    background-image: url(../img/bgd.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Lora', sans-serif;
+    color: #887B62;
+}
+
+
+/* Íconos */
+.fa-linkedin{
+    font-size: 35px;
+    color: #b9b9b9;
+}
+
+.fa-github{
+    font-size: 35px;
+    color: #b9b9b9;
+}
+
+
+
+/* Footer style */
+.footer-bg{
+    background-color: transparent;
+}
+
