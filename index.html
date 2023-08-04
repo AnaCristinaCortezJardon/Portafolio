@@ -17,44 +17,105 @@
 </head>
 <body>
 
-    <div>
-        <div class="bgd"><img src="" alt=""></div>
-        <footer class="py-5 footer-bg">
-            <div class="container">
-
-                <!-- Nombre y título -->
-                <div class="container-welcome">
-                    <h1 class="py-5">
-                        Ana Cristina Cortez Jardón
-                    </h1>
-                    <hr class="horizontal-line">
-                    <h4 class="title">JAVA FULLSTACK DEVELOPER JR.
-                    </h4>
-                </hr>
-                </div>
-                <!-- lista de páginas -->
+    <!-- Nombre y título -->
+    <header>
+        <div class="container welcome">
+            <h1 class="py-5">Ana Cristina Cortez Jardón</h1>
+            <hr class="horizontal-line">
+            <h3 class="title">JAVA FULLSTACK DEVELOPER JR.</h3>
+            <br>
+            <br>
+        </div>
+        <div class="container contenido">
+            <!-- lista de páginas -->
+            <nav>
                 <ul>
-                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap">About</li>
-                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap">Experience</li>
-                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap">Projects</li>
-                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap">Contacts</li>
+                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap element">
+                        <a href="#home" onclick="showSection('home')">Home</a>
+                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap element">
+                        <a href="#about" onclick="showSection('about')">Sobre mí</a>
+                    </li>
+                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap element">
+                        <a href="#experience" onclick="showSection('experience')">Experiencia</a>
+                    </li>
+                    <li class="d-flex flex-column flex-sm-row w-100 gap-2 flex-wrap element">
+                        <a href="#contact" onclick="showSection('contact')">Contacto</a>
+                    </li>
                 </ul>
-                <!-- Íconos -->
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-end flex-wrap">
-                    <br>
-                    <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/AnaCristinaCortezJardon" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            </nav>
+            <br><br><br><br><br><br>
+        </div>
+        </header>
+        <main class="container content">
+        <div>
+            <section id="home">
+            </section>
+            <section id="about">
+                <h3>Hola</h3>
+                <br>
+                <p class="cardtext">Me llamo Ana, permíteme contarte que participé en un Bootcamp para el desarrollo de Java Full Stack Jr. en Generation México, y deseo redirigir mi carrera hacia el ámbito de la programación y análisis de datos ¿quieres conocer más sobre mi?</p>
+            </section>
+            <section id="experience">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Experiencia</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
                     </ul>
-                    
-                </div>
-            </div>
+                    <div class="card-body">
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+            </section>
+            <section id="contact">
+                <form action="https://formspree.io/f/mrgwedzb" method="POST">
+                    <div id="formulario">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <input type="text" class="form-control" id="telefono" placeholder="Número de teléfono" required>
+                            <label for="exampleFormControlTextarea1" class="form-label"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                            <label for="exampleFormControlInput1" class="form-label"></label>
+                            <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje responderé en breve"
+                            required></textarea>
+                                <br>
+                            <button class="enviar btn" type="submit" id="btnEnviar" value="Send">Enviar</button>
+                            <button class="btn" type="button" id="btnClear">Limpiar</button>
+                            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                            <p id="alertValidacionesTexto"></p>
+                            </div>
+                        </div>
+                </form>
+            </section>
+        </div>
+        </main>
+        
+        <footer class="py-5 footer-bg">
+    <!-- Íconos -->
+    <div class="d-flex flex-column flex-sm-row w-100 gap-2 justify-content-end flex-wrap">
+        <br>
+        <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="https://github.com/AnaCristinaCortezJardon" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        
     </div>
     <div class="flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
         <p class="text-center">&copy; 2023 Ana Cristina Cortez Jardón | JAVA FULLSTACK DEVELOPER JR.</p>
     </div>          
         </footer>
     </div>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script defer src="./src/js/contact.js"></script>
+    <script defer src="./src/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

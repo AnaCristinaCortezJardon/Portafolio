@@ -1,7 +1,17 @@
+h1{
+    line-height: 0px;
+    display: flex;
+}
+
+h3{
+    position: absolute;
+}
+
 body {
     font-family: 'Lora', sans-serif;
     color: #887B62;
     background-color: #FEF3ED;
+    font-size: 25px;
 }
 
 .horizontal-line{
@@ -11,12 +21,64 @@ body {
     margin: 20px 0;
 }
 
+/* **********************Efecto de section************** */
+nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #887B62;
+  }
+  
+  nav a:hover {
+    color:  #f0c6cf;
+  }
+
+  .container.content {
+    display: flex;
+    justify-content: flex-end ; 
+    margin-right: 70px;
+    height: fit-content;
+    width: fit-content;
+}
+
+section {
+    flex: 1; /* Permite que las secciones ocupen todo el espacio disponible */
+    max-width: 400px; /* Limita el ancho máximo de las secciones */
+    display: none;
+    margin-right: 70px;
+}
+
+section#home{
+    display: block;
+}
+.cardtext{
+    font-size: 20px;
+}
+
+
+/*FORMULARIO*/
+
+.formulario{
+width: 1000px;
+height: 600px;
+}
+
+.btn{
+    background-color: #887B62;
+    color: #e0e0e0;
+    border-color: #887B62;
+    text-align: center;
+}
 
 
 /* Íconos */
 .fa-linkedin{
     font-size: 35px;
     color: #b9b9b9;
+    margin-right: 70px;
 }
 
 .fa-github{
@@ -29,5 +91,9 @@ body {
 /* Footer style */
 .footer-bg{
     background-color: transparent;
+}
+
+p{
+    font-size: 15px;
 }
 
