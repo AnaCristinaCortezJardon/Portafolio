@@ -13,7 +13,7 @@ let alertValidaciones = document.getElementById("alertValidaciones");
 let flagNombre = true;
 let flagEmail = true;
 let flagTelefono = true;
-
+let submit = true;
 
 //Evento btnClear
 btnClear.addEventListener("click", function (event) {
@@ -41,8 +41,9 @@ const validarNombre = (nombre) => {
  };
 
   const validarTelefono = (telefono) => {
-    const expresionRegular = /^[0-9]{10}$/;
+    const expresionRegular = /^(?!([0-9])\1{9})\d{10}$/;
     return expresionRegular.test(telefono);
+    if
   };
 
   const validarMensaje = (mensaje) => {
@@ -51,7 +52,7 @@ const validarNombre = (nombre) => {
   };
 
  
-//Evento btnAgregar
+//Evento btnEnviar
 btnEnviar.addEventListener("click", function (event) {
     event.preventDefault();
     flagNombre = true;
@@ -134,7 +135,7 @@ btnEnviar.addEventListener("click", function (event) {
     
      */
     //mensaje
-    if (validarMensaje(mensaje.value) == false || !(mensaje.value.length>7 && mensaje.value.length<=200)) {
+    if (validarMensaje(mensaje.value) == false || !(mensaje.value.length>20 && mensaje.value.length<=200)) {
         flagMensaje = false;
         alertValidacionesTexto.insertAdjacentHTML("afterbegin",`
                  <strong>El mensaje ingresado no es válido.</strong><br/>`);
@@ -144,20 +145,8 @@ btnEnviar.addEventListener("click", function (event) {
     else{
         flagMensaje = true;
     }
-    if (flagEmail  && flagNombre && flagTelefono && flagMensaje){
-             emailjs.sendForm(SubmitEvent)
-             .then(() => {
-                Swal.fire(
-                    'Good job!',
-                    'You clicked the button!',
-                    'success'
-                  )
-             }, (err) => {
-               alert(JSON.stringify(err));
-             });
-         
-        /* alertValidaciones.style.display = "none";
-        mensaje.value = ""; */
-    }//mensaje
+    if (flagEmail  && flagNombre && flagTelefono && flagMensaje){    
+        event.target.form.submit();
+}//mensaje
     
 });

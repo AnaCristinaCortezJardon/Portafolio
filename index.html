@@ -74,20 +74,20 @@
                   </div>
             </section>
             <section id="contact">
-                <form action="https://formspree.io/f/mrgwedzb" method="POST">
+                <form id="enviarForm" action="https://formspree.io/f/mrgwedzb" method="POST">
                     <div id="formulario">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre completo" required>
                             <label for="exampleFormControlInput1" class="form-label"></label>
-                            <input type="text" class="form-control" id="telefono" placeholder="Número de teléfono" required>
+                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Número de teléfono" required>
                             <label for="exampleFormControlTextarea1" class="form-label"></label>
-                            <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Correo electrónico" required>
                             <label for="exampleFormControlInput1" class="form-label"></label>
-                            <textarea class="form-control" id="mensaje" placeholder="Escribe tu mensaje responderé en breve"
+                            <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje responderé en breve"
                             required></textarea>
                                 <br>
-                            <button class="enviar btn" type="submit" id="btnEnviar" value="Send">Enviar</button>
+                            <button class="btn" type="submit" id="btnEnviar" >Enviar</button>
                             <button class="btn" type="button" id="btnClear">Limpiar</button>
                             <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
                             <p id="alertValidacionesTexto"></p>
