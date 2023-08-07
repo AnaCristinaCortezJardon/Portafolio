@@ -13,9 +13,8 @@ let alertValidaciones = document.getElementById("alertValidaciones");
 let flagNombre = true;
 let flagEmail = true;
 let flagTelefono = true;
-let submit = true;
-
-//Evento btnClear
+ 
+/* ****************************** Botón clear ****************************** */
 btnClear.addEventListener("click", function (event) {
     event.preventDefault();
     alertValidaciones.style.display = "none";
@@ -28,7 +27,7 @@ btnClear.addEventListener("click", function (event) {
     mensaje.value = "";
     telefono.value = "";
 
-});//btnClear
+});//Cierra btnClear
 
 const validarEmail = (email) => {
     const expresionRegular = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{3}$/;
@@ -41,18 +40,17 @@ const validarNombre = (nombre) => {
  };
 
   const validarTelefono = (telefono) => {
-    const expresionRegular = /^(?!([0-9])\1{9})\d{10}$/;
+    const expresionRegular = /^(?!([0-9])\1{9})\d{10}$/; //no acepta dígitos iguales
     return expresionRegular.test(telefono);
-    if
   };
 
   const validarMensaje = (mensaje) => {
-    const expresionRegular = /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
+    const expresionRegular = /[\s\S]*/; //acepta todos los dígitos
     return expresionRegular.test(mensaje);
   };
 
- 
-//Evento btnEnviar
+
+/* ****************************** Botón enviar ****************************** */
 btnEnviar.addEventListener("click", function (event) {
     event.preventDefault();
     flagNombre = true;
@@ -74,7 +72,7 @@ btnEnviar.addEventListener("click", function (event) {
     mensaje.value = mensaje.value.trim();
     /* console.log(validarMensaje(mensaje.value)); */
 
-    //nombre
+/* ****************************** Validar nombre ****************************** */
     if (validarNombre(nombre.value)==false) {
         flagNombre = false;
     }
@@ -96,7 +94,7 @@ btnEnviar.addEventListener("click", function (event) {
         nombre.value = "";
     }//nombre */
 
-     //email
+/* ****************************** Validar email ****************************** */
      if (validarEmail(email.value)==false) {
         flagEmail = false;
         /* alertValidacionesTexto.insertAdjacentHTML("afterbegin",`
@@ -115,7 +113,7 @@ btnEnviar.addEventListener("click", function (event) {
         email.value = "";
     }//email */
 
-    //telefono
+/* ****************************** Validar teléfono ****************************** */
     if (validarTelefono(telefono.value)==false) {
         flagTelefono = false;
         /* alertValidacionesTexto.insertAdjacentHTML("afterbegin",`
@@ -134,7 +132,7 @@ btnEnviar.addEventListener("click", function (event) {
         telefono.value = "";
     
      */
-    //mensaje
+/* ****************************** Validar mensaje ****************************** */
     if (validarMensaje(mensaje.value) == false || !(mensaje.value.length>20 && mensaje.value.length<=200)) {
         flagMensaje = false;
         alertValidacionesTexto.insertAdjacentHTML("afterbegin",`
@@ -145,8 +143,21 @@ btnEnviar.addEventListener("click", function (event) {
     else{
         flagMensaje = true;
     }
+/* ****************************** Validar todo, enviar y limpiar formulario ****************************** */
     if (flagEmail  && flagNombre && flagTelefono && flagMensaje){    
         event.target.form.submit();
+        limpiarFormulario();
 }//mensaje
-    
 });
+/* ****************************** Función limpiar formulario ****************************** */
+function limpiarFormulario() {
+    alertValidaciones.style.display = "none";
+    nombre.style.border = "";
+    email.style.border = "";
+    telefono.style.border = "";
+    mensaje.style.border = "";
+    nombre.value = "";
+    email.value = "";
+    mensaje.value = "";
+    telefono.value = "";
+}

@@ -66,13 +66,31 @@ width: 1000px;
 height: 600px;
 }
 
+/*Botones*/
 .btn{
     background-color: #887B62;
     color: #e0e0e0;
     border-color: #887B62;
     text-align: center;
 }
-
+.btn-primary{
+    background-color: #887B62;
+    color: #e0e0e0;
+    border-color: #887B62;
+    text-align: center;
+}
+.btn-primary:hover{
+    background-color: #e0e0e0;
+    color: #887B62;
+    border-color: #887B62;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #e0e0e0;
+    color: #887B62;
+    border-color: #887B62;
+    text-align: center;
+}
 
 /* Íconos */
 .fa-linkedin{
@@ -80,11 +98,17 @@ height: 600px;
     color: #b9b9b9;
     margin-right: 70px;
 }
+.fa-linkedin:hover{
+color: #887B62;
+}
 
 .fa-github{
     font-size: 35px;
     color: #b9b9b9;
 }
+.fa-github:hover{
+    color: #887B62;
+    }
 
 
 
