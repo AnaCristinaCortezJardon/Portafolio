@@ -3,7 +3,12 @@ h1{
     display: flex;
 }
 
-h3{
+.stitle{
+    text-align: center;
+    text-shadow:1px 1px 1px #887B62;
+}
+
+h4{
     position: absolute;
 }
 
@@ -19,6 +24,10 @@ body {
     width: 600px;
     background-color:  #887B62; 
     margin: 20px 0;
+}
+
+*{
+    font-size: 20px;
 }
 
 /* **********************Efecto de section************** */
@@ -45,8 +54,8 @@ nav li {
 }
 
 section {
-    flex: 1; /* Permite que las secciones ocupen todo el espacio disponible */
-    max-width: 400px; /* Limita el ancho máximo de las secciones */
+    flex: 1; 
+    max-width: 800px; 
     display: none;
     margin-right: 70px;
 }
@@ -59,11 +68,50 @@ section#home{
 }
 
 
+/*Collapse Sobre mí*/
+.card.card-body{
+    width: 180px;
+    height: 100px;
+}
+.habilidades{
+    width: 200px;
+    height: 80px;
+}
+.container{
+    align-items: center;
+}
+
+
+/*Acordéón Experiencia*/
+
+.accordion-item{
+    width: 800px;
+    height: auto;
+}
+
+.accordion-button:active, .accordion-button:focus{
+    background-color: #f0c6cf;
+    border: 1px solid #eeacba;
+    transition:none;
+    box-shadow: 0 0 10px #eeacba; 
+}
+
+
+
+
 /*FORMULARIO*/
 
-.formulario{
-width: 1000px;
+.container.form{
+width: 800px;
 height: 600px;
+}
+
+.btn-form{
+    background-color: #887B62;
+    color: #e0e0e0;
+    border-color: #887B62;
+    text-align: center;
+    align-items: center;
 }
 
 /*Botones*/
