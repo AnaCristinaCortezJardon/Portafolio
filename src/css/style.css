@@ -1,171 +1,242 @@
-h1{
-    line-height: 0px;
-    display: flex;
-}
-
-.stitle{
-    text-align: center;
-    text-shadow:1px 1px 1px #887B62;
-}
-
-h4{
-    position: absolute;
-}
-
 body {
-    font-family: 'Lora', sans-serif;
-    color: #887B62;
-    background-color: #FEF3ED;
+    margin: 0; 
+    padding: 0; 
+    font-family: Josefin Sans;
     font-size: 25px;
-}
-
-.horizontal-line{
-    height: 5px; 
-    width: 600px;
-    background-color:  #887B62; 
-    margin: 20px 0;
+    background-color: #e0d5d2;
+    color: #5C4E4A;
+    text-align: center;
 }
 
 *{
-    font-size: 20px;
+    margin: 0;
 }
 
-/* **********************Efecto de section************** */
-nav li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #887B62;
-  }
-  
-  nav a:hover {
-    color:  #f0c6cf;
-  }
-
-  .container.content {
-    display: flex;
-    justify-content: flex-end ; 
-    margin-right: 70px;
-    height: fit-content;
-    width: fit-content;
+.container {
+    padding-left: 0; 
+    padding-right: 0; 
 }
 
-section {
-    flex: 1; 
-    max-width: 800px; 
-    display: none;
-    margin-right: 70px;
+.header {
+    background-color: #e0d5d2;
 }
 
-section#home{
-    display: block;
-}
-.cardtext{
-    font-size: 20px;
+.btn {
+    color: #917b76;
+    border-color: #917b76;
 }
 
-
-/*Collapse Sobre mí*/
-.card.card-body{
-    width: 180px;
-    height: 100px;
-}
-.habilidades{
-    width: 200px;
-    height: 80px;
-}
-.container{
-    align-items: center;
+.nav-link, a{
+    color: #917b76;
 }
 
-
-/*Acordéón Experiencia*/
-
-.accordion-item{
-    width: 800px;
-    height: auto;
+.nav-link:hover{
+color: #5C4E4A;
 }
 
-.accordion-button:active, .accordion-button:focus{
-    background-color: #f0c6cf;
-    border: 1px solid #eeacba;
-    transition:none;
-    box-shadow: 0 0 10px #eeacba; 
-}
-
-
-
-
-/*FORMULARIO*/
-
-.container.form{
-width: 800px;
-height: 600px;
-}
-
-.btn-form{
-    background-color: #887B62;
-    color: #e0e0e0;
-    border-color: #887B62;
-    text-align: center;
-    align-items: center;
-}
-
-/*Botones*/
-.btn{
-    background-color: #887B62;
-    color: #e0e0e0;
-    border-color: #887B62;
-    text-align: center;
-}
-.btn-primary{
-    background-color: #887B62;
-    color: #e0e0e0;
-    border-color: #887B62;
-    text-align: center;
-}
-.btn-primary:hover{
-    background-color: #e0e0e0;
-    color: #887B62;
-    border-color: #887B62;
-    text-align: center;
-}
-.btn:hover{
-    background-color: #e0e0e0;
-    color: #887B62;
-    border-color: #887B62;
-    text-align: center;
-}
-
-/* Íconos */
-.fa-linkedin{
-    font-size: 35px;
-    color: #b9b9b9;
-    margin-right: 70px;
-}
-.fa-linkedin:hover{
-color: #887B62;
-}
-
-.fa-github{
-    font-size: 35px;
-    color: #b9b9b9;
-}
-.fa-github:hover{
-    color: #887B62;
+.a:hover{
+    color: #5C4E4A;
     }
 
-
-
-/* Footer style */
-.footer-bg{
-    background-color: transparent;
-}
-
-p{
+.nav-link.lang {
     font-size: 15px;
 }
 
+.nav-link:focus,
+.nav-link.lang:focus {
+    color: #5C4E4A;
+}
+
+.container.carousel{
+    max-width: 100%;
+    margin: 0 auto; /* Centra el carrusel en el contenedor */
+}
+
+.home-title{
+text-align: center;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e0d5d2; 
+    z-index: 999;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #C2A49D ;
+}
+
+/****************************** Redes ******************************/
+.home-buttons {
+    height: 70px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.nav li {
+    margin: 0 20px; 
+}
+
+.btn.btn-outline-primary {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: Josefin Sans;
+    font-size: 20px;
+    padding-bottom: 0%;
+}
+
+.btn.btn-outline-primary:hover {
+    background-color: #C2A49D;
+    border-color: #C2A49D;
+    color: #e0d5d2
+}
+
+.btnRed {
+    fill: #917b76;
+}
+
+.btnRed:hover {
+    fill: #C2A49D;
+}
+
+/****************************** Sobre mí ******************************/
+.about.image{
+    max-width: 100%;
+}
+.card-body{
+    background-color: transparent;
+    border-color: transparent ;
+}
+
+ul{
+    text-align: left;
+}
+
+
+
+/****************************** Estilo de cards habilidades ******************************/
+.owl-carousel {
+    max-width: 100%; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    height: 150px; 
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    max-height: 100%; 
+    width: auto; 
+
+}
+
+/****************************** Contacto ******************************/
+    .contact-section{
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .container.form{
+        font-size: 25px;
+    }
+    .alerta{
+        font-size: 15px;
+        color: #cf2379;
+        display: none;
+        text-align: left !important;
+        margin-bottom: 0;
+    }
+
+    .btn.form:hover{
+        background-color: #C2A49D;
+        border-color: #C2A49D;
+        color: #e0d5d2
+    }
+
+    .contact.titleMail,
+    .contact.titleLocation, 
+    .card-title{
+        color:#917b76;
+    }
+
+    .contact.mail,
+    .contact.location{
+        color:#C2A49D;
+    }
+
+
+/****************************** Projects ******************************/
+    .card.h-100{
+        background-color: #C2A49D;
+    }
+
+    .card-text{
+        font-size: 20px;
+        color: #5C4E4A;
+    }
+
+    .btn.btn-outline-primary-md{
+        text-align: center;
+        font-family: Josefin Sans;
+        font-size: 18px;
+        padding-bottom: 0%;
+        margin-bottom: 2%;
+        width: 200px;
+        height: 40px;
+    }
+    
+    .btn.btn-outline-primary-md:hover {
+        background-color: #C2A49D;
+        border-color: #e0d5d2;
+        color: #e0d5d2
+    }
+/****************************** Footer ******************************/
+    
+    .container-footer{
+        font-size: 18px;
+        background-color: #C2948A;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    @media (max-width: 767px) {
+        body {
+            font-size: 20px;
+        }
+        #carouselExampleSlidesOnly {
+            margin-top: 25px;
+        }
+        .navbar-toggler {
+            color: #917b76; /* Cambia el color del icono del botón del navbar */
+        }
+    
+
+        .container-footer {
+            font-size: 16px; /* Cambia el tamaño de fuente del footer */
+            text-align: center;
+            align-items: center;
+        }
+        .btnRed{
+            width: 70%
+        }
+        .bi.me-2{
+            width: 20%;
+            height: 20%;
+        }
+    }
