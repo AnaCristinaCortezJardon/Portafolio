@@ -64,8 +64,8 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 <div class="container">
     <!-- ****************************************HEADER**************************************** -->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="#home" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light py-3 mb-4">
+        <a href="#home" class="d-flex align-items-center me-md-auto link-body-emphasis text-decoration-none">
             <img
                 type="image/png"
                 width="90"
@@ -77,7 +77,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center mx-auto" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#home" class="nav-link" aria-current="page">Inicio</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">Acerca de mí</a></li>
@@ -86,7 +86,8 @@
                 <!-- <li class="nav-item"><a href="#" class="nav-link lang">ENG</a></li> -->
             </ul>
         </div>
-    </nav>       
+    </nav>
+    
         <br>
         <!-- ****************************************MAIN**************************************** -->
         <main>
@@ -116,25 +117,24 @@
                         <p class="home-description">
                             Me llamo Ana, te cuento que participé en un Bootcamp para el desarrollo web en Generation México, y deseo redirigir mi carrera hacia el ámbito del diseño web y análisis de datos ¿quieres conocer más sobre mi?
                         </p>
-                        <div class="home-buttons">
-                            <ul class="nav">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./src/docs/CV Ana Cristina Cortez Jardón.pdf" download="CV_Ana_Cristina_Cortez_Jardon.pdf">
-                                        <button type="button" class="btn btn-outline-primary">Descargar CV</button>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                </div>
+                <br>
+                <div class="container home-buttons">
+                    <div class="btnRed">
+                        <a href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+                        </a>
+                    </div>
+                    <div class="btnCV">
+                        <a href="./src/docs/CV Ana Cristina Cortez Jardón.pdf" download="CV_Ana_Cristina_Cortez_Jardon.pdf" target="_blank">
+                            <button type="button" class="btn btn-outline-primary">Descargar CV <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#917b76}</style><path d="M256 464a208 208 0 1 1 0-416 208 208 0 1 1 0 416zM256 0a256 256 0 1 0 0 512A256 256 0 1 0 256 0zM376.9 294.6c4.5-4.2 7.1-10.1 7.1-16.3c0-12.3-10-22.3-22.3-22.3H304V160c0-17.7-14.3-32-32-32l-32 0c-17.7 0-32 14.3-32 32v96H150.3C138 256 128 266 128 278.3c0 6.2 2.6 12.1 7.1 16.3l107.1 99.9c3.8 3.5 8.7 5.5 13.8 5.5s10.1-2 13.8-5.5l107.1-99.9z"/></svg></button>
+                        </a>
+                    </div>
+                    <div class="btnRed">
+                        <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+                        </a>
+                    </div>
                 </div>
             </section>
             <!-- División de sección -->
@@ -251,27 +251,29 @@
                             <div class="card-body">
                             <h5 class="card-title">Amor Peludo</h5>
                             <p class="card-text">E-commerce de productos personalizados de mascotas.</p>
-                            <a href="https://github.com/FranciscoNunezAlonso/BackEndAmorPeludo/tree/test-nocturno" target="_blank">
-                                <button type="button" class="btn btn-outline-primary-md">Ver código Back-End</button>
-                            </a>
-                            <a href="https://github.com/FranciscoNunezAlonso/ProyectoIntegradorFrontEnd/tree/develop" target="_blank">
-                                <button type="button" class="btn btn-outline-primary-md">Ver código Front-End</button>
-                            </a>
+                                
+                                    <a href="https://github.com/FranciscoNunezAlonso/BackEndAmorPeludo/tree/test-nocturno" target="_blank">
+                                        <button type="button" class="btn btn-outline-primary-md">Ver código Back-End</button>
+                                    </a>
+                                    <a href="https://github.com/FranciscoNunezAlonso/ProyectoIntegradorFrontEnd/tree/develop" target="_blank">
+                                        <button type="button" class="btn btn-outline-primary-md">Ver código Front-End</button>
+                                    </a>
+                                
                             </div>
                         </div>
                         </div>
                         <div class="col">
-                        <div class="card h-100">
-                            <img src="./src/img/Proyectos/centroComunitario3.png" class="card-img-top" alt="CentroComunitario">
-                            <img src="./src/img/Proyectos/centroComunitario2.png" class="card-img" alt="CentroComunitario">
-                            <div class="card-body">
-                            <h5 class="card-title">Centro Comunitario</h5>
-                            <p class="card-text">Proyecto en HTML y CSS de un centro comunitario dedicado a la protección y adopción perritos.</p>
-                            <a href="https://github.com/zeped418/centroComunitario/tree/develop" target="_blank">
-                                <button type="button" class="btn btn-outline-primary-md">Ver código</button>
-                            </a>
+                            <div class="card h-100">
+                                <img src="./src/img/Proyectos/centroComunitario3.png" class="card-img-top" alt="CentroComunitario">
+                                <img src="./src/img/Proyectos/centroComunitario2.png" class="card-img" alt="CentroComunitario">
+                                    <div class="card-body">
+                                    <h5 class="card-title">Centro Comunitario</h5>
+                                    <p class="card-text">Proyecto en HTML y CSS de un centro comunitario dedicado a la protección y adopción perritos.</p>
+                                    <a href="https://github.com/zeped418/centroComunitario/tree/develop" target="_blank">
+                                        <button type="button" class="btn btn-outline-primary-md">Ver código</button>
+                                    </a>
+                                    </div>
                             </div>
-                        </div>
                         </div>
                         <div class="col">
                         <div class="card h-100">
@@ -319,7 +321,7 @@
                             </div>
                         </div>
                         <!-- information -->
-                        <div class="contact information">
+                        <div class="contact">
                             <i class="uil uil-user-location"></i>
                             <div>
                                 <h4 class="contact titleLocation">Ubicación</h4>
@@ -366,23 +368,23 @@
             <footer>
                 <div class="container-footer">
                     <div class="d-flex flex-wrap flex-column flex-md-row justify-content-center align-items-center py-3 my-4 border-top color">
-                        <p class="col-12 col-md-4 mb-3 mb-md-0 text-body-secondary text-center text-md-left">2023 | Ana Cortez | Hecho con amor <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16" id="heart"><rect width="256" height="256" fill="none"></rect><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M128,216S28,160,28,92A52.00881,52.00881,0,0,1,128.00008,71.965l-.00019.00008A52.00881,52.00881,0,0,1,228,92C228,160,128,216,128,216Z"></path></svg></p>
+                        <p class="col-12 col-md-4 mb-3 mb-md-0 text-body-secondary text-center text-md-center">2023 | Ana Cortez | Hecho con amor <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="16" height="16" id="heart"><rect width="256" height="256" fill="none"></rect><path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="M128,216S28,160,28,92A52.00881,52.00881,0,0,1,128.00008,71.965l-.00019.00008A52.00881,52.00881,0,0,1,228,92C228,160,128,216,128,216Z"></path></svg></p>
                         <div class="col-12 col-md-4 text-center text-md-left">
                             <img class="bi me-2" type="image/png" width="90" height="50" src="./src/img/AC2.png" alt="AC2"/>
                         </div>
-                        <ul class="nav col-12 col-md-4 justify-content-center justify-content-md-end list-unstyled d-flex mt-3 mt-md-0">
-                            <li class="ms-3">
-                                <a href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
-                                </a>
-                            </li>
-                            <li class="ms-3">
-                                <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
-                                    <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+                            <ul class="nav col-12 col-md-4 justify-content-center justify-content-md-end d-flex mt-3 mt-md-0">
+                                <li class="ms-6">
+                                    <a href="https://www.linkedin.com/in/anaccortezjardon/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
                                     </a>
-                            </li>
-                        </ul>
+                                </li>
+                                <li class="ms-6">
+                                    <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
+                                        <a href="https://github.com/AnaCristinaCortezJardon" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" type="button" class="btnRed" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"/></svg>
+                                        </a>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </footer>            
